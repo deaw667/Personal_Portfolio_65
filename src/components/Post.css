@@ -1,0 +1,46 @@
+.seperated-section{
+    display: flex;
+    height: 340px;
+    width: 940px;
+}
+
+.left-section img{
+    height: 340px;
+    width: 450px;
+    object-fit: cover;
+
+}
+
+.right-section{
+    border: 1px solid gray;
+    border-left: none;
+    padding: 20px;
+}
+
+.right-section a{
+    color: white;
+    text-decoration: none;
+}
+
+.right-section p{
+    border-bottom: 1px white solid;
+    border-top: 1px white solid;
+    padding: 50px 10px 50px 10px;
+}
+
+.right-section a:hover{
+    color: aqua;
+    text-decoration: none;
+}
+
+.right-section h4{
+    padding: 30px 40px 40px 10px;
+    border-top: 1px white solid;
+}
+
+.Allpost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}

@@ -1,0 +1,19 @@
+.text-container{
+    display: flex;
+    flex-direction: column;             
+    justify-content: center;
+    border: 1px solid white;
+    padding: 70px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page1-manage{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.page1-manage img{
+    max-width: 800px;
+}

@@ -1,0 +1,29 @@
+.bottom-gap {
+  width: auto;
+  background-color: black;
+  padding: 50px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom div{
+  width: 100%;
+  padding: 20px;
+  border-top: 1px white solid;
+  border-right: 1px white solid;
+}
+
+@media (max-width: 768px) {
+
+    .bottom{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+    }
+
+}
