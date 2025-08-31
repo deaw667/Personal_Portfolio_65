@@ -52,7 +52,7 @@ export default function Metamorpage() {
         <h1>Game Development</h1>
         <h6>Every pixel art credit to Jirateep Muangdee & Chanyanut </h6>
         <p>This is the first website I've ever deployed</p>
-        <Button_01 buttonname="Website source code" />
+        <Button_01 buttonname="Website source code" linkurl={"https://github.com/deaw667/Personal_Portfolio_65"}/>
       </div>
 
       <div>
