@@ -199,7 +199,7 @@ export default function Metamorpage() {
             text={[
               "Before Griffin will dive attack will store a last player position and moving forward to that position so that mean griffin didn't moving to current player position but moving to player last 1 second position for balance to player and make player can be dodge the attack easier and SavePlayerPosition will be call in the animation event before the attack start 1-2 frame.",
             ]}
-            images={[]} // multiple images
+            images={[]}
             imageslower={[griffinscript]}
             linkurl="https://github.com/deaw667/Metamorphoses_Prototype/blob/main/Script/Monster/Griffin.cs"
             video={
@@ -211,7 +211,7 @@ export default function Metamorpage() {
             text={[
               "Golem will charge up the attack radius before attacking player by increase the scale of attack radius game Object. Am using a normal enemy script but create a bool to check if that enemy will charging range in Attack function. And Add function to stop increase a attack range in animation event in unity.",
             ]}
-            images={[]} // multiple images
+            images={[]}
             imageslower={[golem_code1, golem_code2]}
             video={
               "https://www.youtube.com/embed/SpMizG58-0Y?rel=0&modestbranding=1&controls=0&autoplay=1&loop=1&mute=1&playlist=SpMizG58-0Y"
@@ -222,7 +222,7 @@ export default function Metamorpage() {
             text={[
               "Nymph will not moving when she is attacking. She will fire a power ball toward the player position and it depend on how far is player between her as far as player at power ball will be more faster but if player nearly she power ball will be slower for balance as she is just a mini boss not a final boss Am using Normal enemy script too. But i will using EnemyShooting Function instead using of using AttackPlayer function this function will just instantiate a power ball and give them a direction and speed to rigidbody and the damage dealing will be in script that attach in power ball by detect collider tag player.",
             ]}
-            images={[]} // multiple images
+            images={[]}
             linkurl={"https://github.com/deaw667/Metamorphoses_Prototype/blob/main/Script/Enemy/EnemyBullet.cs"}
             imageslower={[nymph_code1, nymph_code2]}
             video={
@@ -234,7 +234,7 @@ export default function Metamorpage() {
             text={[
               "Werewolf will have 2 different attacking move that will randomly using them. Werewolf is using normal enemy script but will be have bool to check if this enemy is a boss and it will random a style before start Attacking every time. after random a style in attacking will be check the result of attack style random. After this is normal just like other enemy but will be a bit different that enemy will have a health bar over the player hotbar. Only way that player will be able to face werewolf boss is by using a portal item so that when werewolf will be instantiate and the health bar will be set Active to true and adding a werewolf gameobject health to it",
             ]}
-            images={[]} // multiple images
+            images={[]}
             imageslower={[werewolf_code]}
             video={
               "https://www.youtube.com/embed/quBwEHmtnvQ?rel=0&modestbranding=1&controls=0&autoplay=1&loop=1&mute=1&playlist=quBwEHmtnvQ"
@@ -254,7 +254,7 @@ export default function Metamorpage() {
             linkurl={
               "https://github.com/deaw667/Metamorphoses_Prototype/blob/main/Script/Misc/ClockScript.cs"
             }
-            images={[]} // multiple images
+            images={[]}
             imageslower={[time_scirpt]}
             video={
               "https://www.youtube.com/embed/n_JN302ZrPw?rel=0&modestbranding=1&controls=0&autoplay=1&loop=1&mute=1&playlist=n_JN302ZrPw"

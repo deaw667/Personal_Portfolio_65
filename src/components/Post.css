@@ -1,15 +1,15 @@
 .seperated-section {
   display: flex;
   width: 100%;
-  max-width: 940px;   /* keep your original size on desktop */
-  min-height: 340px;  /* preserve height look */
+  max-width: 940px;
+  min-height: 340px;
   border: 1px solid gray;
   overflow: hidden;
 }
 
 /* === Left Section (Image) === */
 .left-section {
-  flex: 0 0 450px; /* fixed image width on large screens */
+  flex: 0 0 450px;
 }
 
 .left-section img {
@@ -60,9 +60,9 @@
 /* === Responsive === */
 @media (max-width: 992px) {
   .seperated-section {
-    flex-direction: column;  /* stack vertically */
+    flex-direction: column;
     max-width: 100%;
-    height: auto; /* let it grow naturally */
+    height: auto;
   }
 
   .left-section {
@@ -73,12 +73,12 @@
   .left-section img {
     width: 100%;
     height: auto;
-    max-height: 300px; /* prevent image being too tall */
+    max-height: 300px;
   }
 
   .right-section {
     border-left: none;
-    border-top: 1px solid gray; /* keep separation */
+    border-top: 1px solid gray;
     padding: 20px;
   }
 

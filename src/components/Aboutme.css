@@ -5,7 +5,7 @@
   justify-content: center;
   border-top: 1px solid white;
   gap: 50px;
-  flex-wrap: wrap; /* allow wrapping on smaller screens */
+  flex-wrap: wrap;
 }
 
 .body-text {
@@ -22,7 +22,7 @@
 .body-text h1 {
   font-size: clamp(22px, 4vw, 36px);
   margin-bottom: 10px;
-  width: 100%; /* no fixed width */
+  width: 100%;
 }
 
 .my-img {
