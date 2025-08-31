@@ -1,4 +1,149 @@
-.body-comp{
+.body-comp {
+  display: flex;
+  padding: 50px 20px;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid white;
+  gap: 50px;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+}
+
+.body-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.body-text p {
+  width: auto;
+  line-height: 1.5;
+}
+
+.body-text h1 {
+  font-size: clamp(22px, 4vw, 36px);
+  margin-bottom: 10px;
+  width: 100%; /* no fixed width */
+}
+
+.my-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.my-img img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* === Skills === */
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #292929;
+  padding: 40px 20px;
+}
+
+.skills h1 {
+  font-size: clamp(20px, 3vw, 30px);
+  margin-bottom: 20px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-list img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.skill-list img:hover {
+  transform: scale(1.1);
+}
+
+
+/* == skill detail == */
+.skill-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #383636;
+  padding: 40px 20px;
+}
+
+.skill-detail h1 {
+  font-size: clamp(20px, 3vw, 40px);
+  margin-bottom: 20px;
+}
+
+.skill-list {
+    font-size: clamp(5px, 3vw, 15px);
+    display: flex;
+}
+
+/* === Contact === */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: clamp(18px, 3vw, 28px);
+}
+
+.contact h2 {
+  font-size: clamp(16px, 2.5vw, 22px);
+  margin: 0;
+}
+
+/* === Responsive Breakpoint === */
+@media (max-width: 768px) {
+  .body-comp {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .body-text {
+    max-width: none;
+    align-items: center;
+  }
+
+  .my-img {
+    padding: 0;
+  }
+
+  .my-img img {
+    max-width: 220px;
+  }
+
+  .skill-list img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+/*.body-comp{
     display: flex;
     padding: 50px;
     align-items: center;
@@ -106,5 +251,5 @@
         width: 60px;
         height: 60px;
     }
-}
+}*/
 
