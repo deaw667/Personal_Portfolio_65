@@ -221,7 +221,7 @@
 }
 
 /* set responsive */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .body-comp {
         flex-direction: column;
         text-align: center;
@@ -251,5 +251,5 @@
         width: 60px;
         height: 60px;
     }
-}*/
-
+}
+ */

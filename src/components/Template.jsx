@@ -1,7 +1,7 @@
-// EnemySection.jsx
 import "./Template.css";
-import { Button_01, Button_02 } from "../components/ButtonsComp";
-import Typewriter from "./Typewriter"; // import it
+import { Button01, Button02 } from "../components/ButtonsComp";
+import { motion } from "framer-motion";
+import { elementanim } from "./Animations";
 
 export default function EnemySection({
   title,
@@ -13,19 +13,15 @@ export default function EnemySection({
   linkurl,
 }) {
   return (
-    <div className="whole-enemy">
+    <motion.div {...elementanim} className="whole-enemy">
       <div className={`enemy-section ${reverse ? "reverse" : ""}`}>
-        <div className="enemy-text">
+        <motion.div {...elementanim} className="enemy-text">
           <h2>{title}</h2>
-          {Array.isArray(text) ? (
-            text.map((t, i) => <Typewriter key={i} text={t} speed={1} />)
-          ) : (
-            <Typewriter text={text} speed={1} />
-          )}
-          <Button_01 buttonname="Source Code" linkurl={linkurl}/>
-        </div>
+          <p>{text}</p>
+          <Button01 buttonname="Source Code" linkurl={linkurl}/>
+        </motion.div>
 
-        <div className="enemy-image">
+        <motion.div {...elementanim} className="enemy-image">
           <div className="video-container">
             {/* <video
               src={video}
@@ -52,15 +48,15 @@ export default function EnemySection({
           {images.map((img, i) => (
             <img key={i} src={img} alt={`${title}-${i}`} />
           ))}
-        </div>
+        </motion.div>
       </div>
 
-      <div className="lower-enemy-image">
+      <motion.div {...elementanim} className="lower-enemy-image">
         {imageslower.map((img, i) => (
           <img key={i} src={img} alt={`${title}-${i}`} />
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 
@@ -76,7 +72,7 @@ export default function EnemySection({
           ) : (
             <p>{text}</p>
           )}
-          <Button_01 buttonname="Source Code"/>
+          <Button01 buttonname="Source Code"/>
         </div>
 
         <div className="enemy-image">

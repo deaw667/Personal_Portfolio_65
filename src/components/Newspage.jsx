@@ -13,7 +13,9 @@ import {
   frog_code,
 } from "../components/imagescomp";
 
-import { Button_01, Videoplayer, Imgresponsive, Youtubevideoplayer } from "./ButtonsComp";
+import { transinorm } from "./Animations";
+
+import { Button01, Videoplayer, Imgresponsive, Youtubevideoplayer } from "./ButtonsComp";
 import { motion } from "framer-motion";
 
 const pageMap = {
@@ -31,11 +33,7 @@ export default function Newspage() {
   const PageComponent = pageMap[item.pagename];
 
   return (
-    <motion.div initial={{ opacity: 0, x: 50 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -50 }}
-      transition={{ duration: 0.4 }}
-    >
+    <motion.div {...transinorm}>
       <div className="text-container">
         <div>
           <div>

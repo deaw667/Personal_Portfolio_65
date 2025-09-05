@@ -1,16 +1,18 @@
-import { useState } from "react";
 import gameplay from "../assets/gameplay.jpg";
-import startimg from "../assets/Start.png";
 import "./Metamorpage.css";
 import HeaderComp from "../components/HeaderComp";
 import Bottom from "../components/Bottom";
 import { Link } from "react-router-dom";
 import Template from "../components/Template";
+import { Typewriter } from "react-simple-typewriter";
+
 import {
-  Button_01,
-  Button_02,
+  Button01,
+  Button02,
   Youtubevideoplayer,
 } from "../components/ButtonsComp";
+
+import { transinorm ,elementanim} from "./Animations";
 
 import { motion } from "framer-motion";
 
@@ -29,9 +31,8 @@ import {
 } from "../components/imagescomp";
 
 export default function Metamorpage() {
-  const [count, setCount] = useState(0);
 
-  const [feature, addfeature] = useState([
+  const feature = [
     { id: 1, name: "Health System" },
     { id: 2, name: "Dead and Respawn System" },
     { id: 3, name: "Interact With NPC" },
@@ -39,24 +40,25 @@ export default function Metamorpage() {
     { id: 5, name: "Weapon System Sword and Rifle (Rifle is download asset)" },
     { id: 6, name: "Rifle needed manual Bolt Action for each shot." },
     { id: 7, name: "Sword will knockback some enemy some of them will not" },
-  ]);
+  ];
 
   return (
-    <motion.div
-      initial={{ opacity: 0, x: 50 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -50 }}
-      transition={{ duration: 0.4 }}
-    >
+    <motion.div {...transinorm}>
       <div className="Header-2">
-        <h1>Game Development</h1>
-        <h6>Every pixel art credit to Jirateep Muangdee & Chanyanut </h6>
-        <p>This is the first website I've ever deployed</p>
-        <Button_01 buttonname="Website source code" linkurl={"https://github.com/deaw667/Personal_Portfolio_65"}/>
+        <motion.div {...transinorm}>
+          <h1>Game Development</h1>
+          <h6>Every pixel art credit to Jirateep Muangdee & Chanyanut </h6>
+          <p>This is the first website I've ever deployed</p>
+          <Button01
+          buttonname="Website source code"
+          linkurl={"https://github.com/deaw667/Personal_Portfolio_65"}
+        />
+        </motion.div>
       </div>
 
       <div>
-        <div className="seperated-container">
+        <motion.div {...transinorm} className="seperated-container"
+        >
           <div className="left-container">
             <div className="seperated-container-vid">
               <iframe
@@ -64,9 +66,9 @@ export default function Metamorpage() {
                 height="480"
                 src="https://www.youtube.com/embed/CShKCkOgJHg"
                 title="Metamorphoses Final Demo"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
+                referrerPolicy="strict-origin-when-cross-origin"
               ></iframe>
             </div>
             <h1>Project Metamorphoses</h1>
@@ -125,7 +127,7 @@ export default function Metamorpage() {
               <li>Cursor changing</li>
             </ul>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <div className="Header-3">
@@ -146,11 +148,11 @@ export default function Metamorpage() {
       </div>
 
       <div>
-        <div className="body-container2">
-          <div className="body-container2-header">
+        <motion.div {...elementanim} className="body-container2">
+          <motion.div {...elementanim} className="body-container2-header">
             <h1>Enemy System</h1>
-          </div>
-          <div className="seperated-body2">
+          </motion.div>
+          <motion.div {...elementanim} className="seperated-body2">
             <p>
               For the enemy system am using switch case for trigger a function
               in each enemy state currently having Idle, Patrol, Chase and
@@ -179,21 +181,21 @@ export default function Metamorpage() {
                 />
               </div>
             </div>
-          </div>
-          <div className="lower-des-image">
+          </motion.div>
+          <motion.div {...elementanim} className="lower-des-image">
             <img src={state} />
             <img src={Idlestate} />
             <img src={chasestate} />
             <img src={patrolstate} />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
 
       <div>
         <div className="body-container3">
-          <div className="body-container3-header">
+          <motion.div {...elementanim} className="body-container3-header">
             <h1>Enemy Unique Type</h1>
-          </div>
+          </motion.div>
           <Template
             title="Griffin"
             text={[
@@ -223,7 +225,9 @@ export default function Metamorpage() {
               "Nymph will not moving when she is attacking. She will fire a power ball toward the player position and it depend on how far is player between her as far as player at power ball will be more faster but if player nearly she power ball will be slower for balance as she is just a mini boss not a final boss Am using Normal enemy script too. But i will using EnemyShooting Function instead using of using AttackPlayer function this function will just instantiate a power ball and give them a direction and speed to rigidbody and the damage dealing will be in script that attach in power ball by detect collider tag player.",
             ]}
             images={[]}
-            linkurl={"https://github.com/deaw667/Metamorphoses_Prototype/blob/main/Script/Enemy/EnemyBullet.cs"}
+            linkurl={
+              "https://github.com/deaw667/Metamorphoses_Prototype/blob/main/Script/Enemy/EnemyBullet.cs"
+            }
             imageslower={[nymph_code1, nymph_code2]}
             video={
               "https://www.youtube.com/embed/xhYMwQHtLQg?rel=0&modestbranding=1&controls=0&autoplay=1&loop=1&mute=1&playlist=xhYMwQHtLQg"
@@ -243,9 +247,9 @@ export default function Metamorpage() {
         </div>
 
         <div className="time-system">
-          <div className="time-systemHead">
+          <motion.div {...elementanim} className="time-systemHead">
             <h1>Time system</h1>
-          </div>
+          </motion.div>
           <Template
             title="Atmosphere and Clock"
             text={[

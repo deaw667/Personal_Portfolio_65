@@ -1,12 +1,13 @@
-import gameplay from "../assets/gameplay.jpg";
 import "./Post.css";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { elementanim } from "./Animations";
 
 export default function Post({ item }) {
   console.log({ item });
 
   return (
-    <div className="seperated-section">
+    <motion.div {...elementanim} className="seperated-section">
       <div className="left-section">
         <img src={item.name} />
       </div>
@@ -16,6 +17,6 @@ export default function Post({ item }) {
         </Link>
         <p>{item.text}</p>
       </div>
-    </div>
+    </motion.div>
   );
 }

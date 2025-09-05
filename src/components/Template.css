@@ -9,13 +9,19 @@
 @keyframes appear {
   from {
     opacity: 0;
-    scale: 0.5;
+    transform: scale(0.5);
   }
   to {
     opacity: 1;
-    scale: 1;
+    transform: scale(1);
   }
 }
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
 
 .typewriter-cursor::after {
   content: "|";
@@ -25,23 +31,16 @@
   color: white;
 }
 
-@keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
-}
-
-
-
 .enemy-section {
   padding: 40px;
   display: flex;
   align-items: flex;
   justify-content: center;
   gap: 50px;
-  
+/*   
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 60%; */
 }
 
 .enemy-section.reverse {
@@ -93,6 +92,9 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+    /* animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%; */
 }
 
 .lower-enemy-image img {

@@ -1,10 +1,20 @@
-.Header-1{
-    position: sticky; top:0px;
-    display: flex;
-    align-items: center;
-    padding: 10px 10px 30px 30px;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 2;
+/* === Headers === */
+.Header-1 {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0 0 20px;
+  font-size: 16px;
+  font-style: oblique;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Header-1 h1 {
+  padding: 0px 0px 0px 20px;
 }
 
 .page-select {
@@ -13,14 +23,12 @@
 }
 
 @media (max-width: 768px) {
-
-    .Header-1{
-        display: flex;
-        text-align: center;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0px;
-    }
-
+  .Header-1 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+  }
 }

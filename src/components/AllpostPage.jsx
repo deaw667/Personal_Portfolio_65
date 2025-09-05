@@ -1,6 +1,5 @@
 import "./AllpostPage.css";
 import HeaderComp from "./HeaderComp";
-import gameplay from "../assets/gameplay.jpg";
 import roblox from "../assets/robloxback.png";
 import Post from "./Post";
 import { useState } from "react";
@@ -9,12 +8,16 @@ import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
 import frog from "../assets/frogjump.png";
 import { motion } from "framer-motion";
 import {
-  coregameloop,
-  darker,
-  lighternight,
-  memorialimg,
   rizzonroad_lobby,
 } from "../components/imagescomp";
+
+import {
+  Button01,
+  Button02,
+  Youtubevideoplayer,
+} from "../components/ButtonsComp";
+
+import { transinorm } from "./Animations";
 
 export default function AllpostPage() {
   const [search, setSearch] = useState(""); // store search text
@@ -52,11 +55,7 @@ export default function AllpostPage() {
   );
 
   return (
-    <motion.div initial={{ opacity: 0, x: 50 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -50 }}
-      transition={{ duration: 0.4 }}
-    >
+    <motion.div {...transinorm}>
 
       <div className="Allpost">
         <div className="top-menu">
