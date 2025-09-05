@@ -13,7 +13,6 @@ import {
 } from "../components/ButtonsComp";
 
 import { transinorm ,elementanim} from "./Animations";
-
 import { motion } from "framer-motion";
 
 import {
@@ -196,6 +195,7 @@ export default function Metamorpage() {
           <motion.div {...elementanim} className="body-container3-header">
             <h1>Enemy Unique Type</h1>
           </motion.div>
+
           <Template
             title="Griffin"
             text={[
@@ -203,11 +203,13 @@ export default function Metamorpage() {
             ]}
             images={[]}
             imageslower={[griffinscript]}
+            isgit={true}
             linkurl="https://github.com/deaw667/Metamorphoses_Prototype/blob/main/Script/Monster/Griffin.cs"
             video={
               "https://www.youtube.com/embed/3khnk_tqoOs?rel=0&modestbranding=1&controls=0&autoplay=1&loop=1&mute=1&playlist=3khnk_tqoOs"
             }
           />
+
           <Template
             title="Golem"
             text={[
@@ -219,12 +221,14 @@ export default function Metamorpage() {
               "https://www.youtube.com/embed/SpMizG58-0Y?rel=0&modestbranding=1&controls=0&autoplay=1&loop=1&mute=1&playlist=SpMizG58-0Y"
             }
           />
+
           <Template
             title="Nymph"
             text={[
               "Nymph will not moving when she is attacking. She will fire a power ball toward the player position and it depend on how far is player between her as far as player at power ball will be more faster but if player nearly she power ball will be slower for balance as she is just a mini boss not a final boss Am using Normal enemy script too. But i will using EnemyShooting Function instead using of using AttackPlayer function this function will just instantiate a power ball and give them a direction and speed to rigidbody and the damage dealing will be in script that attach in power ball by detect collider tag player.",
             ]}
             images={[]}
+            isgit={true}
             linkurl={
               "https://github.com/deaw667/Metamorphoses_Prototype/blob/main/Script/Enemy/EnemyBullet.cs"
             }
@@ -255,6 +259,7 @@ export default function Metamorpage() {
             text={[
               "This game will be only save when the day is passing just like stardew valley but for different is when player is dead it will be reload that day so player will be need to passing that day to saving game.In Update function will be two main part is day passing system and clock system in part of clock system first currentTime is just a Deltatime that be able to speed up next am convert 86400 second of real time second per day to 1440 for make one day in game is 24 minute in real life so that mean each in game hour having 60 second the circle got 360 degree to fit 360 with 24 in game hour then i made every 15 degree is mean 1 hour on Ui. And the lowest one is just to show in game hour and minute in inspector.for day passing system because of maybe millisecond is not 1440.00 and it should to reset time every day so when it reach or higher 1440 will reset current time to 0 and then set time to 5 Am every day and it will save game , destroy every single enemy that exist in the forest zone. For light and atmosphere system it just using if else to check current time in update and lerp the light color to blue white and orange.",
             ]}
+            isgit={true}
             linkurl={
               "https://github.com/deaw667/Metamorphoses_Prototype/blob/main/Script/Misc/ClockScript.cs"
             }

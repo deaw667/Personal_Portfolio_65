@@ -1,4 +1,3 @@
-// motionConfig.js
 export const defaultTransition = {
   duration: 0.4,
   ease: "easeInOut",

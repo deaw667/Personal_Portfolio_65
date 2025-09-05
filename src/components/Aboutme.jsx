@@ -28,9 +28,6 @@ import { SiAdobeaftereffects } from "react-icons/si";
 import { transinorm } from "./Animations";
 
 export default function Aboutme() {
-  const identext =
-    "I am graduated from Walailak University, majoring in Multimedia Animation and Games. My favorite hobby is Creating a game in different platform like unity, roblox, unreal, Or even modding the random game. I'm ready to keep improving my skills.You can contact me by the You can contact us via the channels below here.";
-
   return (
     <motion.div {...transinorm}>
       {/* bodycomp */}
@@ -38,7 +35,13 @@ export default function Aboutme() {
         <div className="body-text">
           <h1>Thaweechai Phoonsawt</h1>
           <p>Or you can call me "Deaw".</p>
-          <p>{identext}</p>
+          <p>
+            I am graduated from Walailak University, majoring in Multimedia
+            Animation and Games. My favorite hobby is Creating a game in
+            different platform like unity, roblox, unreal, Or even modding the
+            random game. I'm ready to keep improving my skills.You can contact
+            me by the You can contact us via the channels below here.
+          </p>
         </div>
 
         <div className="my-img">

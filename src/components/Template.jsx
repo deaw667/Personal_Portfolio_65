@@ -11,6 +11,7 @@ export default function EnemySection({
   reverse,
   video,
   linkurl,
+  isgit,
 }) {
   return (
     <motion.div {...elementanim} className="whole-enemy">
@@ -18,7 +19,7 @@ export default function EnemySection({
         <motion.div {...elementanim} className="enemy-text">
           <h2>{title}</h2>
           <p>{text}</p>
-          <Button01 buttonname="Source Code" linkurl={linkurl}/>
+          {isgit && <Button01 buttonname="Source Code" linkurl={linkurl}/>}
         </motion.div>
 
         <motion.div {...elementanim} className="enemy-image">
@@ -59,44 +60,3 @@ export default function EnemySection({
     </motion.div>
   );
 }
-
-/*export default function EnemySection({ title, text, images = [], imageslower = [], reverse ,video}) {
-  return (
-    <div className="whole-enemy">
-      <div className={`enemy-section ${reverse ? "reverse" : ""}`}>
-        <div className="enemy-text">
-          <h2>{title}</h2>
-          {}
-          {Array.isArray(text) ? (
-            text.map((t, i) => <p key={i}>{t}</p>)
-          ) : (
-            <p>{text}</p>
-          )}
-          <Button01 buttonname="Source Code"/>
-        </div>
-
-        <div className="enemy-image">
-          <div className="video-container">
-              <video
-                src={video}
-                autoPlay
-                loop
-                muted
-                playsInline
-              ></video>
-          </div>
-          {images.map((img, i) => (
-            <img key={i} src={img} alt={`${title}-${i}`} />
-          ))}
-        </div>
-      </div>
-    
-      <div className="lower-enemy-image">
-        {imageslower.map((img, i) => (
-          <img key={i} src={img} alt={`${title}-${i}`} />
-        ))}
-      </div>
-    </div>
-  );
-}
-*/
