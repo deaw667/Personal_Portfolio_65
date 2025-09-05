@@ -6,10 +6,24 @@ import { transinorm } from "./Animations";
 export function Navbar() {
   return (
     <motion.div {...transinorm}>
-      <Link to="/page1"><button>Home</button></Link>
-      <Link to="/page2"><button>Other Game Development</button></Link>
-      <Link to="/page3"><button>About me</button></Link>
-      <Link to="/"><button>Log out</button></Link>
+      <Link to="/page1">
+        <button>Home</button>
+      </Link>
+      <Link to="/page2">
+        <button>Other Game Development</button>
+      </Link>
+      <Link to="/page3">
+        <button>About me</button>
+      </Link>
+      <Link to="/">
+        <button
+          onClick={() => {
+            localStorage.removeItem("isLoggedIn");
+          }}
+        >
+          Log out
+        </button>
+      </Link>
     </motion.div>
   );
 }

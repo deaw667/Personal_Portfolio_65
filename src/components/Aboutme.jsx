@@ -24,6 +24,9 @@ import { SiAdobephotoshop } from "react-icons/si";
 import { DiVisualstudio } from "react-icons/di";
 import { SiAdobepremierepro } from "react-icons/si";
 import { SiAdobeaftereffects } from "react-icons/si";
+import { MdOutlineEmail } from "react-icons/md";
+import { IoCall } from "react-icons/io5";
+
 
 import { transinorm } from "./Animations";
 
@@ -46,6 +49,23 @@ export default function Aboutme() {
 
         <div className="my-img">
           <img src={ytran} />
+        </div>
+      </div>
+
+      <div className="contact">
+        <div>
+          {" "}
+          <h1>
+            <IoCall />
+          </h1>
+          <h2>098-336-0990</h2>
+        </div>
+        <div>
+          {" "}
+          <h1>
+            <MdOutlineEmail />
+          </h1>
+          <h2>thaweechai0004@gmail.com</h2>
         </div>
       </div>
 
@@ -113,7 +133,6 @@ export default function Aboutme() {
       </div>
 
       <div className="skills">
-        <h1>My Skill</h1>
         <div className="skill-list">
           <div>
             <img src={unity} />
@@ -144,13 +163,6 @@ export default function Aboutme() {
           </div>
         </div>
       </div>
-
-      <div className="contact">
-        <h1>Contact:</h1>
-        <h2>098-336-0990</h2>
-        <h2>thaweechai0004@gmail.com</h2>
-      </div>
-
       <Bottom />
     </motion.div>
   );

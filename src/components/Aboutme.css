@@ -98,11 +98,12 @@
 .contact {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
   justify-content: center;
   align-items: center;
   padding: 30px 20px;
   border-bottom: 1px solid white;
+  border-top: 1px solid white;
   text-align: center;
 }
 
