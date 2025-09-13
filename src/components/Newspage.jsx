@@ -55,7 +55,80 @@ export default function Newspage() {
   );
 }
 
+
 export function Page1() {
+  return (
+    <>
+      <div>
+        <h1>Income outcome web app calendar</h1>
+        <p className="pb-6 pt-7">
+           This is my first webapp I have created by React. Unfortunately there
+          is no backend in this project yet. Every data is store in Localstorage
+          in your browser.
+        </p>
+        <Imgresponsive title={"rizzonroad_lobby"} imgsrc={[incomeoutcomeweb]} />
+
+        <div className="flex justify-center items-center gap-5">
+          <Button01
+            buttonname="Website Link"
+            linkurl={"https://income-calendar-proj.vercel.app"}
+          />
+          <Button01
+            buttonname="Website source code"
+            linkurl={"https://github.com/deaw667/Income-calendar-proj"}
+          />
+        </div>
+      </div>
+
+      <div>
+        <h2>Features</h2>
+        <ul>
+          <li className="p-2">Simple login and register system</li>
+          <li className="p-2">Add and remove income / outcome on each day of month</li>
+          <li className="p-2">Capable to add multiple income / outcome in the same day</li>
+          <li className="p-2">Sumary of every income and outcome on each day the seperated </li>
+          <li className="p-2">Clean Ui and animated element</li>
+          <li className="p-2">Responsive Ui design on smaller device and mobile</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Framework | Libary used</h2>
+        <ul>
+          <li className="p-2">
+            Vite : I use vite to help me create my project and make it's alot
+            easier to deploy my website with vercel.
+          </li>
+          <li className="p-2">
+            Tailwind : I use Tailwind in most of css part in this project
+            instead of using pure Css i feel like it's alot easier for me to do
+            inline css coding.
+          </li>
+          <li className="p-2">
+            React : As we all know almost nobody using a pure css html
+            javascript to make a website in this year already so i choose react
+            to make this project because i am not master enough with Next.js.
+          </li>
+          <li className="p-2">
+            React Router : Normally, as we know react doesn't have built-in
+            multiple page Libary like Next.js so we need to use Router.
+          </li>
+          <li className="p-2">
+            React Calendar : I use this for calendar one the left side so i
+            don't have to create the whole calendar system from scratch.
+          </li>
+          <li className="p-2">
+            Motion dev : I used it to animate a element like transition
+            enter/exit etc. stead of using @keyframe in css so i can make
+            transition alot easier to edit.
+          </li>
+        </ul>
+      </div>
+    </>
+  );
+}
+
+export function Page2() {
   return (
     <>
       <div className="page1-manage">
@@ -167,78 +240,6 @@ export function Page1() {
           <Imgresponsive title={"dark"} imgsrc={[darker]} />
           <Imgresponsive title={"light"} imgsrc={[lighternight]} />
         </div>
-      </div>
-    </>
-  );
-}
-
-export function Page2() {
-  return (
-    <>
-      <div>
-        <h1>Income Outcome web app Calendar</h1>
-        <p className="pb-6 pt-7">
-           This is my first webapp I have created by React. Unfortunately there
-          is no backend in this project yet. Every data is store in Localstorage
-          in your browser.
-        </p>
-        <Imgresponsive title={"rizzonroad_lobby"} imgsrc={[incomeoutcomeweb]} />
-
-        <div className="flex justify-center items-center gap-5">
-          <Button01
-            buttonname="Website Link"
-            linkurl={"https://income-calendar-proj.vercel.app"}
-          />
-          <Button01
-            buttonname="Website source code"
-            linkurl={"https://github.com/deaw667/Income-calendar-proj"}
-          />
-        </div>
-      </div>
-
-      <div>
-        <h2>Features</h2>
-        <ul>
-          <li className="p-2">Simple Login and Register system</li>
-          <li className="p-2">Add and remove income / outcome on each day of month</li>
-          <li className="p-2">Capable to add multiple income / outcome in the same day</li>
-          <li className="p-2">Sumary of every income and outcome on each day the seperated </li>
-          <li className="p-2">Clean Ui and animated element</li>
-          <li className="p-2">Responsive Ui design on smaller device and mobile</li>
-        </ul>
-      </div>
-
-      <div>
-        <h2>Framework | Libary used</h2>
-        <ul>
-          <li className="p-2">
-            Vite : I use vite to help me create my project and make it's alot
-            easier to deploy my website with vercel.
-          </li>
-          <li className="p-2">
-            Tailwind : I use Tailwind in most of css part in this project
-            instead of using pure Css i feel like it's alot easier for me to do
-            inline css coding.
-          </li>
-          <li className="p-2">
-            React : As we all know almost nobody using a pure css html
-            javascript to make a website in this year already so i choose react
-            to make this project because i am not master enough with Next.js.
-          </li>
-          <li className="p-2">
-            React Router : Normally, as we know react doesn't have built-in
-            multiple page Libary like Next.js so we need to use Router.
-          </li>
-          <li className="p-2">
-            React Calendar : I use this for calendar one the left side so i
-            don't have to create the whole calendar system from scratch.
-          </li>
-          <li className="p-2">
-            Motion dev : I used it to animate a element like transition
-            enter/exit etc. stead of using @keyframe in css so i can make
-            transition alot easier to edit.
-          </li>
-        </ul>
       </div>
     </>
   );
