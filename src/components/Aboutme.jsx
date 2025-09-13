@@ -27,7 +27,6 @@ import { SiAdobeaftereffects } from "react-icons/si";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 
-
 import { transinorm } from "./Animations";
 
 export default function Aboutme() {
@@ -40,10 +39,9 @@ export default function Aboutme() {
           <p>Or you can call me "Deaw".</p>
           <p>
             I am graduated from Walailak University, majoring in Multimedia
-            Animation and Games. My favorite hobby is Creating a game in
-            different platform like unity, roblox, unreal, Or even modding the
-            random game. I'm ready to keep improving my skills.You can contact
-            me by the You can contact us via the channels below here.
+            Animation and Games. I am a person who is ready to learn new things,
+            just like I how learned about Frontend, even though I graduated
+            about Unity engine. You can contact me below here.
           </p>
         </div>
 
@@ -95,15 +93,15 @@ export default function Aboutme() {
               </li>
               <li>
                 {" "}
+                <RiTailwindCssFill /> Tailwind : Basic
+              </li>
+              <li>
+                {" "}
                 <SiRobloxstudio /> Roblox Studio : Basic
               </li>
               <li>
                 {" "}
                 <RiNextjsLine /> Next.js : Beginner
-              </li>
-              <li>
-                {" "}
-                <RiTailwindCssFill /> Tailwind : Beginner
               </li>
             </ul>
           </div>

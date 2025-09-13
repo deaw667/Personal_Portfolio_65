@@ -13,11 +13,14 @@ import time_scirpt from "../assets/codes/time_script.png";
 import werewolf_code from "../assets/codes/werewolf_code.png";
 import frog_code from "../assets/codes/frog_code.png";
 
+
+
 import coregameloop from "../assets/imgs/coregameloop.jpg";
 import darker from "../assets/imgs/darker.png";
 import lighternight from "../assets/imgs/lighternight.png";
 import memorialimg from "../assets/imgs/memorialimg.png";
 import rizzonroad_lobby from "../assets/imgs/rizzonroad_lobby.png";
+import incomeoutcomeweb from "../assets/imgs/incomeoutcomeweb.png";
 
 export {
   //statepic  
@@ -39,5 +42,6 @@ export {
   darker,
   lighternight,
   memorialimg,
+  incomeoutcomeweb,
   rizzonroad_lobby
 };

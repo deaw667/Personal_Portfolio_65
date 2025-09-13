@@ -10,7 +10,7 @@ export function Navbar() {
         <button>Home</button>
       </Link>
       <Link to="/page2">
-        <button>Other Game Development</button>
+        <button>Other Works</button>
       </Link>
       <Link to="/page3">
         <button>About me</button>

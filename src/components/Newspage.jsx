@@ -11,17 +11,24 @@ import {
   memorialimg,
   rizzonroad_lobby,
   frog_code,
+  incomeoutcomeweb,
 } from "../components/imagescomp";
 
 import { transinorm } from "./Animations";
 
-import { Button01, Videoplayer, Imgresponsive, Youtubevideoplayer } from "./ButtonsComp";
+import {
+  Button01,
+  Videoplayer,
+  Imgresponsive,
+  Youtubevideoplayer,
+} from "./ButtonsComp";
 import { motion } from "framer-motion";
 
 const pageMap = {
   Page1,
   Page2,
   Page3,
+  Page4,
 };
 
 export default function Newspage() {
@@ -121,7 +128,7 @@ export function Page1() {
             there is not all of system.
           </p>
 
-          <h2>Revamping Tank Shell to Projectile</h2>
+          <h2 className="pt-10">Revamping Tank Shell to Projectile</h2>
           <p>
             Normally in this game tank shell is not projectile and too short
             shot so i fix it by edit a flare ammo and adding a explosive ,
@@ -130,18 +137,26 @@ export function Page1() {
             ammo and done.
           </p>
 
-          <Youtubevideoplayer vidurl={"https://www.youtube.com/embed/K0hBsoet7oc?rel=0&modestbranding=1&controls=0&autoplay=1&loop=1&mute=1&playlist=K0hBsoet7oc"} />
+          <Youtubevideoplayer
+            vidurl={
+              "https://www.youtube.com/embed/K0hBsoet7oc?rel=0&modestbranding=1&controls=0&autoplay=1&loop=1&mute=1&playlist=K0hBsoet7oc"
+            }
+          />
 
-          <h2>Revamping First Person Camera</h2>
+          <h2 className="pt-10">Revamping First Person Camera</h2>
           <p>
             for normally first person shooting in this game look really weird so
             I try to moving a camera and the weapon position by finding in the
             gun file and edit it until it look good just like normal FPS game.
           </p>
 
-          <Youtubevideoplayer vidurl={"https://www.youtube.com/embed/a0PTSuSFv6s?rel=0&modestbranding=1&controls=0&autoplay=1&loop=1&mute=1&playlist=a0PTSuSFv6s"} />
+          <Youtubevideoplayer
+            vidurl={
+              "https://www.youtube.com/embed/a0PTSuSFv6s?rel=0&modestbranding=1&controls=0&autoplay=1&loop=1&mute=1&playlist=a0PTSuSFv6s"
+            }
+          />
 
-          <h2>Make Night Time is Darker</h2>
+          <h2 className="pt-10">Make Night Time is Darker</h2>
           <p>
             for normally in game night time is not dark enough or even not dark.
             so i manage to make night time is darker by finding Timecycle
@@ -161,40 +176,69 @@ export function Page2() {
   return (
     <>
       <div>
-        <h1>Dodge Frog. My First Game</h1>
-        <p>
-          This game is endless game that will let's you play as frog that need
-          to dodge a obstacle and collecting the coin for score.
+        <h1>Income Outcome web app Calendar</h1>
+        <p className="pb-6 pt-7">
+           This is my first webapp I have created by React. Unfortunately there
+          is no backend in this project yet. Every data is store in Localstorage
+          in your browser.
         </p>
-        <Youtubevideoplayer vidurl={"https://www.youtube.com/embed/Dohx5IKLQUE?rel=0&modestbranding=1&controls=0&autoplay=1&loop=1&mute=1&playlist=Dohx5IKLQUE"} />
+        <Imgresponsive title={"rizzonroad_lobby"} imgsrc={[incomeoutcomeweb]} />
+
+        <div className="flex justify-center items-center gap-5">
+          <Button01
+            buttonname="Website Link"
+            linkurl={"https://income-calendar-proj.vercel.app"}
+          />
+          <Button01
+            buttonname="Website source code"
+            linkurl={"https://github.com/deaw667/Income-calendar-proj"}
+          />
+        </div>
       </div>
 
       <div>
-        <h2>Game System</h2>
-        <p>This game has the following system:</p>
+        <h2>Features</h2>
         <ul>
-          <li>Character control system Can walk left and right</li>
-          <li>
-            Health system that reduces every time you receive damage from
-            obstacles
-          </li>
-          <li>Damage system that will reduce the player's health</li>
-          <li>The system spawns obstacles from randomly set points </li>
-          <li>and other basic information displayed on the screen</li>
+          <li className="p-2">Simple Login and Register system</li>
+          <li className="p-2">Add and remove income / outcome on each day of month</li>
+          <li className="p-2">Capable to add multiple income / outcome in the same day</li>
+          <li className="p-2">Sumary of every income and outcome on each day the seperated </li>
+          <li className="p-2">Clean Ui and animated element</li>
+          <li className="p-2">Responsive Ui design on smaller device and mobile</li>
         </ul>
       </div>
 
       <div>
-        <Youtubevideoplayer vidurl={"https://www.youtube.com/embed/1x1hnUOI76Y?rel=0&modestbranding=1&controls=0&autoplay=1&loop=1&mute=1&playlist=1x1hnUOI76Y"} />
-        <h2>How it Work</h2>
-        <p>
-          as you can see for now it have 3 different type of object that will
-          falling from above a coin , spike ball and the iron cube. It using a
-          same script but will random instantiate between this three thing on
-          the position in array and the effect will be add the the object that
-          falling like move faster, deal a damage, adding a coin count etc.{" "}
-        </p>
-        <Imgresponsive title={"code"} imgsrc={[frog_code]} />
+        <h2>Framework | Libary used</h2>
+        <ul>
+          <li className="p-2">
+            Vite : I use vite to help me create my project and make it's alot
+            easier to deploy my website with vercel.
+          </li>
+          <li className="p-2">
+            Tailwind : I use Tailwind in most of css part in this project
+            instead of using pure Css i feel like it's alot easier for me to do
+            inline css coding.
+          </li>
+          <li className="p-2">
+            React : As we all know almost nobody using a pure css html
+            javascript to make a website in this year already so i choose react
+            to make this project because i am not master enough with Next.js.
+          </li>
+          <li className="p-2">
+            React Router : Normally, as we know react doesn't have built-in
+            multiple page Libary like Next.js so we need to use Router.
+          </li>
+          <li className="p-2">
+            React Calendar : I use this for calendar one the left side so i
+            don't have to create the whole calendar system from scratch.
+          </li>
+          <li className="p-2">
+            Motion dev : I used it to animate a element like transition
+            enter/exit etc. stead of using @keyframe in css so i can make
+            transition alot easier to edit.
+          </li>
+        </ul>
       </div>
     </>
   );
@@ -250,18 +294,71 @@ export function Page3() {
         </p>
       </div>
 
-      <div>
-
-      </div>
+      <div></div>
 
       <div>
         <h1>Ui Event State</h1>
-        <Imgresponsive title={"coregameloop"} imgsrc={[coregameloop]}/>
+        <Imgresponsive title={"coregameloop"} imgsrc={[coregameloop]} />
       </div>
 
       <div>
         <h1>Gameplay paper prototype</h1>
-        <Youtubevideoplayer vidurl={"https://www.youtube.com/embed/1Na3qG4ynCM?rel=0&modestbranding=1&controls=0&autoplay=1&loop=1&mute=1&playlist=1Na3qG4ynCM"} />
+        <Youtubevideoplayer
+          vidurl={
+            "https://www.youtube.com/embed/1Na3qG4ynCM?rel=0&modestbranding=1&controls=0&autoplay=1&loop=1&mute=1&playlist=1Na3qG4ynCM"
+          }
+        />
+      </div>
+    </>
+  );
+}
+
+export function Page4() {
+  return (
+    <>
+      <div>
+        <h1>Dodge Frog. My First Game</h1>
+        <p>
+          This game is endless game that will let's you play as frog that need
+          to dodge a obstacle and collecting the coin for score.
+        </p>
+        <Youtubevideoplayer
+          vidurl={
+            "https://www.youtube.com/embed/Dohx5IKLQUE?rel=0&modestbranding=1&controls=0&autoplay=1&loop=1&mute=1&playlist=Dohx5IKLQUE"
+          }
+        />
+      </div>
+
+      <div>
+        <h2>Game System</h2>
+        <p>This game has the following system:</p>
+        <ul>
+          <li>Character control system Can walk left and right</li>
+          <li>
+            Health system that reduces every time you receive damage from
+            obstacles
+          </li>
+          <li>Damage system that will reduce the player's health</li>
+          <li>The system spawns obstacles from randomly set points </li>
+          <li>and other basic information displayed on the screen</li>
+        </ul>
+      </div>
+
+      <div>
+        <Youtubevideoplayer
+          vidurl={
+            "https://www.youtube.com/embed/1x1hnUOI76Y?rel=0&modestbranding=1&controls=0&autoplay=1&loop=1&mute=1&playlist=1x1hnUOI76Y"
+          }
+        />
+        <h2>How it Work</h2>
+        <p>
+          as you can see for now it have 3 different type of object that will
+          falling from above a coin , spike ball and the iron cube. It using a
+          same script but will random instantiate between this three thing on
+          the position in array and the effect will be add the the object that
+          falling like move faster, deal a damage, adding a coin count etc.{" "}
+        </p>
+        <Imgresponsive title={"code"} imgsrc={[frog_code]} />
       </div>
     </>
   );

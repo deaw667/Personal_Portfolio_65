@@ -7,9 +7,7 @@ import Bottom from "./Bottom";
 import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
 import frog from "../assets/frogjump.png";
 import { motion } from "framer-motion";
-import {
-  rizzonroad_lobby,
-} from "../components/imagescomp";
+import { rizzonroad_lobby, incomeoutcomeweb } from "../components/imagescomp";
 
 import {
   Button01,
@@ -33,9 +31,9 @@ export default function AllpostPage() {
     },
     {
       id: 2,
-      name: frog,
-      title: "Dodge Frog. My First Game",
-      text: "This game is endless game that will let's you play as frog that need to dodge a obstacle and collecting the coin for score.",
+      name: incomeoutcomeweb,
+      title: "Web app Calendar",
+      text: "This is my first webapp I have created by React. Unfortunately there is no backend in this project yet. Every data is store in Localstorage in your browser.",
       page: "/page4",
       pagename: "Page2",
     },
@@ -47,6 +45,14 @@ export default function AllpostPage() {
       page: "/page4",
       pagename: "Page3",
     },
+    {
+      id: 4,
+      name: frog,
+      title: "Dodge Frog. My First Game",
+      text: "This game is endless game that will let's you play as frog that need to dodge a obstacle and collecting the coin for score.",
+      page: "/page4",
+      pagename: "Page4",
+    },
   ]);
 
   // filter posts based on search text
@@ -56,7 +62,6 @@ export default function AllpostPage() {
 
   return (
     <motion.div {...transinorm}>
-
       <div className="Allpost">
         <div className="top-menu">
           <h1>All post</h1>

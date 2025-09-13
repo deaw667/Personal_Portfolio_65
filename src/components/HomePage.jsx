@@ -14,7 +14,7 @@ const HomePage = () => {
     const loggedIn = localStorage.getItem("isLoggedIn");
     if (loggedIn === "true") {
       setCorrect(true);
-      navigate("/page1"); // auto-redirect
+      navigate("/page1");
     }
   }, []);
 
